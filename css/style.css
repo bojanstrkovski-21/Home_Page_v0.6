@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Fredericka+the+Great&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+:root {
+    --ff-1: 'Cinzel', serif;
+    --ff-2: 'Fredericka the Great', cursive;
+    --ff-3: 'Roboto', sans-serif;
+    --ff-4: 'Roboto Flex', sans-serif;
+    --ff-5: 'Heebo', sans-serif;
+    --ff-6: 'Karla', sans-serif;
+    --ff-7: 'Nunito', sans-serif;
+    --ff-8: 'Oswald', sans-serif;
+              
+               /*backgronds*/
+
+    --clr-01: rgba(0, 106, 145, 0.06);
+    --clr-04: #881544;
+    --clr-05: rgb(255, 255, 255, 0.04);
+    --clr-06: rgb(255, 255, 255, 0.02);
+    --clr-07: rgb(255, 255, 255, 0.01);
+
+
+               /*text-color*/
+
+    --clr-02: rgb(145, 245, 145);
+    --clr-03: #07ffc1;
+    
+
+    --box_shadow-01: 0 5px 25px rgba(14, 21, 37, 0.8);
+    --box_shadow-02: 0 5px 25px rgba(59, 60, 61, 0.8);
+    --box_shadow-03: 0 1px 22px rgba(59, 60, 61, 0.8);
+    --box_shadow-04: 0 5px 25px rgba(14, 21, 37, 0.6);
+
+    --border-01: solid 1.5px rgba(92, 90, 90, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image:url("../images/bg/Shiny Overlay.svg"); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size:cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 80vh;
+}
+
+.naslov {
+    height: 8.8125rem;
+    background: var(--clr-01);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-l {
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent;
+}
+
+.hd1 {
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-06);
+    box-shadow: var(--box_shadow-02);
+    border-radius: 50px;
+    height: 55px;
+   
+}
+
+.hd1 h1 {
+    color: var(--clr-02);
+    font-family: var(--ff-2);
+    background: transparent;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 22px;
+    font-family: var(--ff-8);
+    color: var(--clr-02);
+    margin-bottom: 15px;
+}
+
+.logo-r {
+    grid-column: 4 / 5;
+    background: transparent;
+}
+
+.logo-l img,
+.logo-r img {
+    background: transparent;
+}
+
+
+/* .proba {
+    color: #07ffc1;
+    border: #07ffc1 solid 2px;
+    width: 410px;
+    height: 245px;
+    border-radius: 23px;
+} */
+
+
+.search-engines {
+margin-left: 15px;
+margin-top: 15px;
+background: var(--clr-07);
+border-radius: 23px;
+line-height: 35px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 350px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-03);
+}
+
+a:visited {
+    color: var(--clr-03);
+}
+
+a:hover {
+    color: var(--clr-02);
+}
+
+.link a:hover {
+    background: var(--clr-04);
+    border-radius: 8px;
+    padding: 2.5px 3.5px;
+}
+
+.link a {
+    background: rgb(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 2.5px 3.5px;
+    font-family: var(--ff-3);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    font-family: var(--ff-7);
+    font-size: 17px;
+    font-weight:700;
+    font-style: italic;
+    color: var(--clr-02);
+}
+
+.visina__1 {
+    height: 420px;
+    text-align: center;
+}
+
